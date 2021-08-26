@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Unit_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine('b');
+            // Console.WriteLine('Hello World!'); Expecting a literal not a string.
+            Console.WriteLine(12345);
+            Console.WriteLine(true);
+            Console.WriteLine(12.2m);
+            Console.WriteLine("123");  // Treating as string then a number.
+            string firstName;
+            firstName = "Bob";
+            Console.WriteLine(firstName);
+            var message = "Hello World!"; // var implicitly creates message of a string datatype
+                                          // message = 10.0m; cannot change string datatype to decimal
+
+            String name = "Bob";
+            int n = 3;
+            double f = 34.4;
+            Console.WriteLine("Hello," +name+ " ! You have " + n + " in your inbox. The temperature is " + f + " celsius.");
+            Console.ReadKey();
+
+        }
+    }
+}
