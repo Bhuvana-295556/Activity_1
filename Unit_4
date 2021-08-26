@@ -1,0 +1,43 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Unit_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int firstNumber = 12;
+            int secondNumber = 7;
+            Console.WriteLine(firstNumber + secondNumber);
+            string firstName = "Bob";
+            int widgetsSold = 7;
+            Console.WriteLine(firstName + " sold " + widgetsSold + 7 + " widgets."); //  the compiler treats everything as a string and concatenates it all together
+            Console.WriteLine(firstName + " sold " + (widgetsSold + 7) + " widgets."); // operator overloaded.
+            int first = 7;
+            int second = 5;
+            decimal quotient = (decimal)first / (decimal)second; // converting int to decimal to give accurate result in decimal.
+            Console.WriteLine("Modulus of 200 / 5 : " + (200 % 5));
+            int value1 = 3 + 4 * 5;
+            int value2 = (3 + 4) * 5;
+            Console.WriteLine(value1);
+            Console.WriteLine(value2);
+            int value = 0;
+            value += 5; // value=value+5;
+            value++; // value=value+1
+            
+            Console.WriteLine("First: " + value); // prints original value
+            Console.WriteLine("Second: " + value++); // prints same value since operator is post increment
+            Console.WriteLine("Third: " + value);  //  prints incremented value from above statement.
+            Console.WriteLine("Fourth: " + (++value)); // first increments and then prints.
+            int fahrenheit = 94;
+            decimal c = ( (decimal) 5 / (decimal)9)*(94 - 32);
+            Console.WriteLine("The temperature is "+ c +" Celsius.");
+
+            Console.ReadLine();
+        }
+    }
+}
